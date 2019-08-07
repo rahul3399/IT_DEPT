@@ -64,7 +64,45 @@ heading-para p{
 }
 /*Hover.css end*/
 
+/*--Achievements-section--*/
 
+.underline:after{
+	    content: '';
+	    background: #01baef;
+	    height: 2px;
+	    width: 90px;
+	    position: absolute;
+	    top: 90%;
+	    right: 47%;
+}
+#achieve{
+	background: linear-gradient(135deg, rgb(243, 107, 55) 0%, rgb(243, 107, 55) 23%,rgb(244, 133, 60) 23%, rgb(244, 133, 60) 27%,rgb(245, 159, 64) 27%, rgb(245, 159, 64) 73%,rgb(245, 186, 69) 73%, rgb(245, 186, 69) 74%,rgb(246, 212, 73) 74%, rgb(246, 212, 73) 78%,rgb(247, 238, 78) 78%, rgb(247, 238, 78) 100%);
+}
+
+#achieve h2{
+	margin-top: 5%;
+	color: #fff;
+	font: 700 38px/44px "gentona", "Georgia", serif;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	text-shadow: 2px 3px 2px #393939;
+}
+.achieve-name{
+	background: #01BAEF;
+	padding: 10px;
+	display: block;
+	overflow: hidden;
+	height: 120px;
+}
+.achieve-name h3{
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+
+/*--//Achievements-section-end--*/
 
 /*--map--*/
 .map iframe {
@@ -122,7 +160,7 @@ a:active {
 h1,h2{
   font-weight: 600;
   line-height:1.1em;
-  color:#333;
+  color: #333;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: 'Changa', sans-serif;
@@ -624,7 +662,7 @@ right:0px;
 .flex-caption {zoom: 1;/* bottom: 198px; */background-color: transparent;color: #fff;margin: 0;padding: 2px 25px 0px 30px;position: absolute;left: 0;text-align: right;margin: 0 auto;right: 0px;display: inline-block;width: 100%;right: 0 !important;border-radius: 15px 15px 0 0;bottom: 10%;}
 .flex-caption h3 {color: #2F3A58;letter-spacing: 0px;margin-bottom: 8px;text-transform: uppercase;font-size: 36px;font-weight: 400;font-family: 'Changa', sans-serif;}
 .flex-caption p {margin: 12px 0 18px;font-size: 19px;font-weight: 600;}
-.skill-home{margin-bottom:50px;background: tomato;padding: 30px;}
+.skill-home{margin-bottom:50px;background: transparent;padding: 30px;}
 .skill-home2{margin-bottom:50px;background: #e3e3e3;padding: 0px 30px 30px 30px;} /*ccss*/
 .inner-skill-home h4{
   text-decoration: none;
@@ -1167,7 +1205,7 @@ form#commentform textarea {
 }
 section.section-padding.gray-bg {
     background: #0c4270;
-    padding: 60px;
+    padding: 30px;
     color: #ffffff;
 }
  section.section-padding.gray-bg h2 {
@@ -1186,11 +1224,17 @@ margin-bottom: 0;
 font-size: 15px;
 color: inherit;
 }
+.panel-body{
+	background-color: #fff;
+}
+.panel-body p{
+	color: #000000;
+}
 .panel-group .panel {
 margin-bottom: 0;
 border-radius: 2px;
 }
-.panel {margin-bottom: 18px;background-color: #bd3737;border: 1px solid #cccccc;border-radius: 2px;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);box-shadow: 0 1px 1px rgba(0,0,0,0.05);}
+.panel {margin-bottom: 18px;background-color: #bf5700;border: 1px solid #cccccc;border-radius: 2px;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);box-shadow: 0 1px 1px rgba(0,0,0,0.05);}
 #accordion-alt3 .panel-heading h4 a i {font-size: 17px;line-height: 18px;width: 18px;height: 18px;margin-right: 8px;color: #A0A0A0;text-align: center;border-radius: 50%;margin-left: 6px;font-weight: bold;}  
 .progress.pb-sm {
 height: 6px!important;
@@ -1367,7 +1411,7 @@ display:block;
     text-decoration: none;
     font-weight: 600;
 }
-.box-area{padding: 15px;background: #ffffff;margin-top: -21px;}
+.box-area{padding: 15px;background: #fff;margin-top: -21px;}
 .box-area h3{font-size: 17px;font-weight: 600;}
 .box-area p{color: #000000;}
 /* --- Map --- */
@@ -1823,8 +1867,22 @@ article img.pull-right, article .align-right{
   background: #187FB3;
   border-color: #187FB3;
 }
+
+
+
+
+
+
+
+
+
+
 /*  Media queries 
 ============================= */
+
+
+
+
 @media screen and (min-width: 800px) {
       // this css will only be used when the screen size is min 800px
     .dropdown:hover .dropdown-menu{display: block!important;color: blue!important;}
@@ -1836,7 +1894,9 @@ article img.pull-right, article .align-right{
 		width:100%;
 	}
 
-
+.section.section-padding.gray-bg{
+	padding: 10px;
+}
 	
 	footer .widget form  input#appendedInputButton {
 		  display: block;
@@ -1925,7 +1985,9 @@ padding-top: 3px;
 			  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 	}
 	
-
+section.section-padding.gray-bg {
+		padding: 10px;
+	}
 	
 	li.active  {
 		border: none;
