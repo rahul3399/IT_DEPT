@@ -12,7 +12,6 @@ body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:300;
 	line-height:1.6em;
-	color: #ffffff;
 	font-size: 1.4em;
 }
 
@@ -31,6 +30,24 @@ heading-para p{
   text-align: center;
 }
 
+.box-shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+.box-shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+.box-shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+.box-shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2);
+}
+.box-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+.box-shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
 /*Hover.css start*/
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -67,14 +84,14 @@ heading-para p{
 /*--Achievements-section--*/
 
 .item{
-	box-shadow: 5px 10px #888888;
+	
 }
 .achieve-item{
-	    /*box-shadow: 5px 10px #888888;*/
+	    
 }
 .underline:after{
 	    content: '';
-	    background: #01baef;
+	    background: #bd3737;
 	    height: 2px;
 	    width: 90px;
 	    position: absolute;
@@ -82,7 +99,8 @@ heading-para p{
 	    right: 47%;
 }
 #achieve{
-	 background-color: #e3e3e3; 
+	 background-color: #f9f9f9;
+   margin-bottom: 10%;
 }
 
 #achieve h2{
@@ -92,10 +110,13 @@ heading-para p{
 	letter-spacing: 1px;
 	margin-bottom: 25px;
 	text-transform: uppercase;
-	text-shadow: 2px 3px 2px #393939;
+	text-shadow: 1px 2px 1px #393939;
 }
+/*#achieve .row{
+  margin-bottom: 0px;
+}*/
 .achieve-name{
-	background: #00bfa9;
+	background: #bd3737 	;
 	padding: 10px;
 	display: block;
 	overflow: hidden;
@@ -109,6 +130,12 @@ heading-para p{
 }
 
 /*--//Achievements-section-end--*/
+
+
+
+.section-white{
+  background-color: #ffffff;
+}
 
 /*--map--*/
 .map iframe {
