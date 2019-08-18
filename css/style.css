@@ -112,6 +112,20 @@ heading-para p{
 	text-transform: uppercase;
 	text-shadow: 1px 2px 1px #393939;
 }
+
+.owl-next, .owl-prev{
+  width: 22px;
+    height: 40px;
+    position: absolute ;
+    top: 50%;
+
+}
+  .owl-prev {
+    left: -30px;
+  }
+  .owl-next {
+    right: -30px;
+  }
 /*#achieve .row{
   margin-bottom: 0px;
 }*/
@@ -333,6 +347,10 @@ img.img-polaroid {
     font-size: 1.25em;
     display: none;
     outline: none; }
+
+
+
+
     @media screen and (max-width: 990px) {
       .main-navigation .menu-toggle {
         display: block; } }
@@ -383,6 +401,9 @@ img.img-polaroid {
 .mobile-navigation {
   clear: both;
   display: none; }
+
+
+
   @media screen and (min-width: 991px) {
     .mobile-navigation {
       display: none !important; } }
@@ -394,7 +415,7 @@ img.img-polaroid {
       color: white; }
     .mobile-navigation .menu .current-menu-item a {
       color: #1392ec; }
- 
+
   
 .topbar{
     background-color: #bf5700;
@@ -946,8 +967,14 @@ color:white !important;
 }
 
 /*card slider*/
+@media only screen and (max-width: 768px) {
 
+   .owl-next, .owl-prev{
+    display: none;
+ }
+}
 @media (min-width: 768px) {
+
 	/* show 3 items */
 	.carousel-inner .active,
 	.carousel-inner .active + .carousel-item,
